@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Papir Kamen Makaze</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<h1>IZABERI ORUZJE</h1>
+</header>
+<div class="container">
+	<section class="one">
+		<button id="makazeDugme">
+			<span class="fa fa-hand-scissors-o"></span>
+			<h3>Makaze</h3>
+		</button>
+		<button id="papirDugme">
+			<span class="fa fa-hand-paper-o"></span>
+			<h3>Papir</h3>
+		</button>
+		<button id="kamenDugme">
+			<span class="fa fa-hand-rock-o"></span>
+			<h3>Kamen</h3>
+		</button>
+		<button id="protivnikDugme" onclick="choiceComp()">Protivnikov izbor</button>
+	</section>
+	<section class="mid">
+		<h2>BITKA</h2>
+	</section>
+	<section class="two">
+		<div class="you">
+			<h2>Tvoj izbor</h2>
+			<span id="tvoj" class="fa fa-hand-scissors-o"></span>
+		</div>
+		<div class="comp">
+			
+			<h2>Protivnikov izbor</h2>
+			<span id="njegov" class="fa fa-hand-scissors-o"></span>
+		</div>
+	</section>
+	<section class="last">
+		<button id="rezDugme" onclick="compare()">Borba!</button>
+		<div>
+			<h1 id="rez"></h1>
+		</div>
+	</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
